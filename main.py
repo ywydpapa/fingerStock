@@ -1,1 +1,14 @@
-# 2022년 마지막 프로젝트 자동 매매 주식거래기.
+from kiwoom.kiwoom import *
+import sys
+from PyQt5.QtWidgets import *
+
+class Main():
+    def __init__(self):
+        print("Main() Start")
+
+        self.app = QApplication(sys.argv)
+        self.kiwoom = Kiwoom()
+        self.app.exec_()
+
+if __name__ == "__main__":
+    Main()
